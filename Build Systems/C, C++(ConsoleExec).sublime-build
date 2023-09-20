@@ -1,0 +1,5 @@
+{
+  "cmd": ["g++","-std=c++11", "-Wall", "-time", "$file", "&&" , "a"],
+  "selector": "source.c,source.c++",
+  "target" : "console_exec"
+}
