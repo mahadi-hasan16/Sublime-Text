@@ -1,0 +1,11 @@
+{
+    "windows": {
+        "cmd": ["g++", "-std=c++11", "${file}"],
+    },
+    "cmd": ["g++", "-std=c++11", "${file}"],
+    "file_regex": "^(.*)\\(([0-9]+),([0-9]+)\\) (Error|Fatal): (.*)$",
+    "working_dir": "${file_path}",
+    "selector": "source.c,source.c++",
+    "shell": true,
+    "shell_cmd": "g++ -std=c++11 \"${file}\" && start cmd /c \"\"a.exe\" & echo. & pause\""
+}
