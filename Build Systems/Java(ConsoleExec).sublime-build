@@ -1,0 +1,5 @@
+{
+  "cmd":["javac","$file_name","&&","java","$file_base_name"],
+  "selector": "source.java",
+  "target" : "console_exec"
+}
